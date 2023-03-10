@@ -159,7 +159,9 @@ return setUserSpecificData({
     userDB && userDB[validate()] && setDescription(userDB[validate()].Posts[`PostImage_${router.query.temporal.slice(2)}`].description)
     userDB && userDB[validate()] && setCopyrightIMG(userDB[validate()].Posts[`PostImage_${router.query.temporal.slice(2)}`].copyrightIMG)
 
-    specificData && specificData[`PostImage_${router.query.temporal}`] && specificData[`PostImage_${router.query.temporal}`].nota && setTextEditor(specificData[`PostImage_${router.query.temporal}`].nota)
+    specificData && specificData[`PostImage_${router.query.temporal}`] && specificData[`PostImage_${router.query.temporal}`].nota 
+? setTextEditor(specificData[`PostImage_${router.query.temporal}`].nota)
+:setTextEditor('En redacción ')
 
   }, [specificData, router.query.temporal]);
 
