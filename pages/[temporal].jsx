@@ -163,7 +163,7 @@ return setUserSpecificData({
 ? setTextEditor(specificData[`PostImage_${router.query.temporal}`].nota)
 :setTextEditor('En redacción ')
 
-  }, [specificData, router.query.temporal]);
+  }, [userDB, specificData, router.query.temporal]);
 
 
   // userDB && console.log(userDB[validate()].Posts[`PostImage_${router.query.temporal.slice(2)}`].nota)
