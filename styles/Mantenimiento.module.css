@@ -1,0 +1,46 @@
+.container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(217, 217, 217);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.video {
+    height: 40%;
+    border:10px solid black;
+    border-radius: 5px;
+  }
+
+.img {
+    height: 55%;
+}
+
+.whatsapp {
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: auto;
+    height: 50px;
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+    .video {
+        height: auto;
+        width: 90%;
+      }
+    
+    .img {
+        height: auto;
+        width: 90%;
+    }  
+}
+
+
+
+

@@ -1,0 +1,27 @@
+.container {
+    min-height: 100vh;
+    padding-top: 65px;
+    padding-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imgContainer {
+    text-align: center;
+}
+.grid {
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:  40px 30px;
+}
+
+
+@media (max-width: 600px) {
+    .grid {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+}

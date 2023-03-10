@@ -1,0 +1,821 @@
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.section div div a>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    max-height: 310px;
+    object-fit: cover;
+    margin: 0;
+    transition-duration: .1s;
+    filter: brightness(1);
+    overflow: hidden;
+}
+
+.section div div img:hover {
+    filter: brightness(.8);
+}
+
+.containerSubtitle {
+    position: relative;
+    background-color: #ffffff;
+    padding: 0;
+    height: 24px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-bottom: 3px solid brown;
+
+}
+
+.subtitle {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: 0;
+    display: inline-block;
+    width: 145px;
+    padding: 0;
+    font-size: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 0;
+    color: rgb(250, 250, 250);
+    clip-path: polygon(0 0, 83% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(to right, #00404a, #007483, #00404a);
+}
+
+.sliderWhatsapp {
+    right: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10000;
+}
+
+.description {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 5px;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to top, #002e35, #00404a91, transparent);
+    text-align: left;
+    font-size: 15px;
+}
+
+.inDevelop {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 5px;
+    width: 5px;
+    font-weight: bold;
+    background-color: brown;
+    border: 1px solid brown;
+    border-radius: 20px;
+    color: brown;
+    z-index: 1000;
+}
+
+.gridOne,
+.gridThreeA,
+.gridThreeB,
+.gridFour,
+.gridFive,
+.gridSix,
+.gridSeven,
+.gridEight {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: grid;
+    max-height: 310px;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 150px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 0px;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+}
+
+.gridOne,
+.gridThreeA,
+.gridThreeB,
+.gridFour,
+.gridFive,
+.gridSix :hover {
+    color: white;
+}
+
+.allVisible {
+    position: relative;
+    overflow: visible;
+    height: auto;
+    max-height: 10000px;
+}
+
+.buttonSeeAll {
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    height: 18px;
+    width: 65px;
+    text-align: right;
+    background: linear-gradient(to right, #00404a, #007483, #007483, #007483, #00404a);
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    z-index: 100000;
+}
+
+/* 
+.gridOne> :nth-child(2n+1) {
+background-color: red;
+} */
+
+
+.gridOne> :nth-child(n) {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.gridOne> :nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+
+.gridThreeA> :nth-child(n) {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.gridThreeA> :nth-child(1) {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.gridThreeA> :nth-child(2) {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+.gridThreeB> :nth-child(n) {
+    width: 100%;
+    height: 150px;
+    position: relative;
+
+}
+
+.gridThreeB> :nth-child(1) {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+}
+
+.gridThreeB> :nth-child(2) {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.gridThreeB> :nth-child(3) {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+
+
+
+.gridFour> :nth-child(n) {
+    width: 100%;
+    height: 150px;
+    position: relative;
+
+}
+
+.gridFour> :nth-child(1) {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+
+}
+
+.gridFour> :nth-child(2) {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+
+}
+
+.gridFour> :nth-child(3) {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/4;
+    grid-row: 1/3;
+
+
+}
+
+.gridFour> :nth-child(4) {
+    width: 100%;
+    height: 100%;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.gridFive> :nth-child(n) {
+    width: 100%;
+    height: 150px;
+    position: relative;
+
+}
+
+.gridFive> :nth-child(1) {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+
+}
+
+.gridFive> :nth-child(2) {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 1/2;
+
+
+}
+
+.gridFive> :nth-child(3) {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 2/3;
+
+
+}
+
+
+
+
+
+.gridSix> :nth-child(n) {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.gridSix> :nth-child(1) {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    overflow: hidden;
+}
+
+.gridSix> :nth-child(2) {
+    width: 100%;
+    height: 100%;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+
+
+
+.gridSeven> :nth-child(n) {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.gridSeven> :nth-child(1) {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    overflow: hidden;
+}
+
+.gridSeven> :nth-child(2) {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.gridSeven> :nth-child(3) {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+
+.gridEight> :nth-child(n) {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+
+
+.datePost {
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.727);
+    z-index: 1000;
+    color: beige;
+}
+
+
+
+@media (max-width: 850px) and (orientation: portrait) {
+    .description {
+        font-size: 12px;
+    }
+
+    .section div div a>img {
+        width: 100%;
+        max-height: 180px;
+    }
+
+    .gridOne,
+    .gridThreeA,
+    .gridThreeB,
+    .gridFour,
+    .gridFive,
+    .gridSix,
+    .gridSeven,
+    .gridEight {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: grid;
+        max-height: 180px;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(auto-fit, 180px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-bottom: 0px;
+        color: transparent;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .gridOne> :nth-child(n),
+    .gridThreeA> :nth-child(n),
+    .gridThreeB> :nth-child(n),
+    .gridFour> :nth-child(n),
+    .gridFive> :nth-child(n),
+    .gridSix> :nth-child(n),
+    .gridSeven> :nth-child(n),
+    .gridEight> :nth-child(n) {
+        position: relative;
+        width: 100%;
+        height: 180px;
+    } 
+
+   .gridOne> :nth-child(-n+8),
+    .gridThreeA> :nth-child(-n+8),
+    .gridThreeB> :nth-child(-n+8),
+    .gridFour> :nth-child(-n+8),
+    .gridFive> :nth-child(-n+8),
+    .gridSix> :nth-child(-n+8),
+    .gridSeven> :nth-child(-n+8),
+    .gridEight> :nth-child(-n+8) {
+        grid-row: auto;
+    }  
+
+
+
+    .allVisible {
+        position: relative;
+        overflow: visible;
+        height: auto;
+        max-height: 10000px;
+    }
+
+
+
+     /* .gridOne> :nth-child(1),
+    .gridThreeA> :nth-child(1),
+    .gridThreeB> :nth-child(1),
+    .gridFour> :nth-child(1),
+    .gridFive> :nth-child(1),
+    .gridSix> :nth-child(1),
+    .gridSeven> :nth-child(1),
+    .gridEight> :nth-child(1) {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: grid;
+        max-height: 200px;
+        overflow: hidden;
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-rows: repeat(auto-fit, 150px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-bottom: 0px;
+        color: transparent;
+        font-size: 16px;
+        text-align: center;
+        background-color: red;
+    }  /*
+
+  
+
+ 
+    .gridOne,
+    .gridThreeA,
+    .gridThreeB,
+    .gridFour,
+    .gridFive,
+    .gridSix,
+    .gridSeven,
+    .gridEight {
+        max-height: 180px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } */
+
+    /*   .gridThreeB,
+    .gridFive {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gridThreeB> :nth-child(1) {
+        height: 200px;
+        grid-column: 1/2;
+    }
+
+    .gridThreeB> :nth-child(2) {
+        height: 200px;
+        grid-column: 2/3;
+    }
+ 
+    .gridThreeB> :nth-child(3) {
+        height: 200px;
+        grid-column: 3/4;
+    }
+
+/* 
+
+
+    .gridFive> :nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .gridFive> :nth-child(2) {
+        height: 100px;
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .gridFive> :nth-child(3) {
+        height: 100px;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    } */
+
+
+}
+
+
+
+
+
+
+
+
+
+/* 
+
+@media (min-width: 700px) {
+    
+
+    .section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 5px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .section div div a>img {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        max-height: 465px;
+        object-fit: cover;
+        margin: 0;
+        transition-duration: .5s;
+        filter: brightness(0.9);
+    
+    }
+    
+    .section div div img:hover {
+        filter: brightness(1);
+    
+    }
+    
+    .containerSubtitle {
+        background-color: #ffffff;
+        padding: 0;
+        height: 24px;
+        margin-bottom: 5px;
+        border-bottom: 3px solid brown;
+    
+    }
+    
+    .subtitle {
+        position: absolute;
+        top: 2px;
+        margin: 0;
+        font-weight: 200;
+        display: inline-block;
+        width: 150px;
+        padding: 0;
+        font-size: 10px;
+        padding: 2px;
+        padding-left: 5px;
+        color: rgb(250, 250, 250);
+        clip-path: polygon(0 0, 83% 0, 100% 100%, 0% 100%);
+        background: linear-gradient(to right, #00404a, #007483, #00404a);
+    }
+    
+    .sliderWhatsapp {
+        right: 10px;
+        bottom: 10px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 10000;
+    }
+    
+    .description {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        color: white;
+        bottom: 0;
+        padding: 10px 15px;
+        text-overflow: ellipsis;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(0, 0, 0, 0.407);
+        text-align: left;
+        font-size: 13px;
+    }
+    
+    .inDevelop {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 5px;
+        width: 5px;
+        font-weight: bold;
+        background-color: brown;
+        border: 1px solid brown;
+        border-radius: 20px;
+        color: brown;
+        z-index: 1000;
+    }
+    
+    .gridOne,
+    .gridThreeA,
+    .gridThreeB,
+    .gridFour,
+    .gridFive,
+    .gridSix {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: grid;
+        max-height: 465px;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        margin-bottom: 0px;
+        color: transparent;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .gridOne,
+    .gridThreeA,
+    .gridThreeB,
+    .gridFour,
+    .gridFive,
+    .gridSix :hover {
+        color: white;
+    }
+    
+    .allVisible {
+        position: relative;
+        overflow: visible;
+        height: auto;
+        max-height: 10000px;
+    }
+    
+    .buttonSeeAll {
+        cursor: pointer;
+        position: absolute;
+        top: 1px;
+        right: 0;
+        height: 18px;
+        width: 50px;
+        text-align: right;
+        background: linear-gradient(to right, #00404a, #007483, #007483, #007483, #00404a);
+        border: none;
+        color: #ffffff;
+        border-radius: 3px;
+        z-index: 100000;
+    }
+    
+    .gridOne> :nth-child(n) {
+        width: 100%;
+        height: 230px;
+        position: relative;
+    
+    }
+    
+    .gridOne> :nth-child(1) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+    
+    
+    
+    .gridThreeA> :nth-child(n) {
+        width: 100%;
+        height: 230px;
+        position: relative;
+    
+    }
+    
+    .gridThreeB> :nth-child(1) {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    
+    
+    
+    
+    
+    
+    .gridThreeB> :nth-child(n) {
+        width: 100%;
+        height: 230px;
+        position: relative;
+    
+    }
+    
+    .gridThreeB> :nth-child(1) {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    
+    
+    
+    
+    .gridFour> :nth-child(n) {
+        width: 100%;
+        height: 230px;
+        position: relative;
+    
+    }
+    
+    .gridFour> :nth-child(1) {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .gridFour> :nth-child(3) {
+        width: 100%;
+        height: 100%;
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    
+    
+    .gridFive> :nth-child(n) {
+        width: 100%;
+        height: 230px;
+        position: relative;
+    
+    }
+    
+    .gridFive> :nth-child(3) {
+        width: 100%;
+        height: 100%;
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    
+    
+    
+    
+    
+    
+    .gridSix> :nth-child(n) {
+        position: relative;
+        width: 100%;
+        height: 230px;
+    }
+    
+    
+    .datePost {
+        position: absolute;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.727);
+        z-index: 1000;
+        color: beige;
+    }
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */

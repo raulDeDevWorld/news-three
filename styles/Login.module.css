@@ -1,0 +1,131 @@
+.container {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #f2f2f2;
+    color: #f2f2f2;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+  }
+  .header {
+    position: absolute;
+    top: 0;
+    height: 65px;
+    width: 100vw;
+    background-color: #007483;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-bottom: 10px solid #8FC2C9;
+  }
+  .main {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+  }
+  
+  .title {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    color: white;
+    text-align: center;
+  }
+  
+  .form {
+    position: relative;
+    height: 280px;
+    width: 90%;
+    max-width: 400px;
+    background-color: #007483;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  
+    padding: 15px;
+    color: white;
+    text-align: left;
+    border: 1px solid #294B98;
+    border-radius: 10px;
+  }
+  
+  .input {
+    border: none;
+    border: 1px solid #00B2BD;
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 7px;
+    border-radius: 20px;
+  }
+  
+  .buttonsContainer {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .linkForm {
+    width: 100%;
+    text-align: center;  
+    margin-top: 10px; 
+    font-size: 12px;
+    color: white;    
+    bottom: 15px;
+    z-index: 100;
+  }
+  .link {
+    text-decoration: underline;
+  }
+
+  .label {
+    background-color: #00B2BD;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    width: 90%;
+    min-width: 140px;
+    padding: 8px 1px; 
+    border-radius: 20px;        
+    text-align: center;
+
+    transition-duration: .5s;
+  }
+
+
+
+.inputFile {
+  display: none;
+}
+.perfil {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+

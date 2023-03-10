@@ -1,0 +1,70 @@
+.button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    width: 90%;
+    min-width: 140px;
+    padding: 8px 1px; 
+    border-radius: 20px;        
+    
+    transition-duration: .5s;
+}
+.buttonPrimary {
+    color: white;
+    background-color: #007483;
+    border: 2px solid #8FC2C9;
+}
+.buttonPrimary:hover {
+    color: white;
+    background-color: brown;
+    border: 2px solid white;
+}
+.miniButtonPrimary {
+    height: 25px;
+    padding: 0;
+    color: white;
+    background-color: #007483;
+    border: 2px solid #8FC2C9;
+}
+.miniButtonPrimary:hover {
+    color: white;
+    background-color: brown;
+    border: 2px solid white;
+}
+.miniButtonLight {
+    height: 25px;
+    padding: 0;
+    color: rgb(0, 116, 131);
+    background-color: #ffffff;
+    border: 2px solid #8FC2C9;
+}
+.miniButtonLight:hover {
+    color: white;
+    background-color: brown;
+    border: 2px solid white;
+}
+.buttonSecondary {
+    color: white;
+    background-color: #007483;
+    border: 2px solid #8FC2C9;
+}
+.buttonSecondary:hover {
+    color: #014953;
+    background-color: #8FC2C9;
+    border: 2px solid #ffffff3c;
+}
+.buttonMiniSecondary {
+    width: 100%;
+    padding: 2px;
+    color: white;
+    font-size: 12px;
+    background-color: brown;
+    border: 2px solid brown;
+}
+.buttonMiniSecondary:hover {
+    color: brown;
+    background-color: #ffffff;
+    border: 2px solid brown;
+}

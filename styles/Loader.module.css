@@ -1,0 +1,132 @@
+
+.spinner div {
+    position: absolute;
+    border-width: 4px;
+    border-style: solid;
+    opacity: 1;
+    border-radius: 50%;
+    animation: spinnerKeyframe 1.5s cubic-bezier(0,0.2,0.8,1) infinite;
+    background-image: linear-gradient(#00B2BD,#00B2BD, #00B2BD);
+  
+  }
+   
+  .spinner div:nth-child(1) {
+    border-color: #00B2BD
+  }
+  
+  .spinner div:nth-child(2) {
+    border-color: #00B2BD;
+    animation-delay: -0.5s;
+  }
+  
+   .spinner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; 
+  }
+   
+  .spinner div { box-sizing: content-box; }
+  
+  @keyframes spinnerKeyframe {
+    0% {
+      top: 96px;
+      left: 96px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 18px;
+      left: 18px;
+      width: 156px;
+      height: 156px;
+      opacity: 0;
+    }
+  }
+  
+  .spinnerContainer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: transparent;
+  }
+  
+
+
+
+
+
+
+
+  
+.spinnerIMG div {
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 50%;
+  animation: spinnerKeyframe 1.5s cubic-bezier(0,0.2,0.8,1) infinite;
+  background-image: linear-gradient(#cccccc, #cccccc, #cccccc);
+
+}
+ 
+.spinnerIMG div:nth-child(1) {
+  border-color: #cccccc
+}
+
+.spinnerIMG div:nth-child(2) {
+  border-color: #cccccc;
+  animation-delay: -0.5s;
+}
+
+ .spinnerIMG {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; 
+}
+ 
+.spinnerIMG div { box-sizing: content-box; }
+
+@keyframes spinnerKeyframe {
+  0% {
+    top: 96px;
+    left: 96px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 18px;
+    left: 18px;
+    width: 156px;
+    height: 156px;
+    opacity: 0;
+  }
+}
+
+.spinnerContainerIMG {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}

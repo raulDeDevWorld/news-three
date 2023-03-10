@@ -1,0 +1,339 @@
+.main {
+  position: relative;
+
+  top: 0;
+  background-color: white;
+  margin: 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 15fr 1fr;
+  grid-gap: 5px;
+
+  z-index: 100;
+}
+
+.main > :nth-child(1) {
+  grid-column: 1/3;
+  position: sticky;
+  align-self: start;
+  top: 5px;
+  z-index: 100000000000000;
+}
+
+.main > :nth-child(2) {
+  grid-column: 1/3;
+}
+
+.viewer {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.adds {
+  grid-column: 2/3;
+  grid-row: 3/4;
+
+  background-color: rgb(171, 107, 25);
+  position: sticky;
+  align-self: start;
+  top: 50px
+}
+
+.adds img{
+  grid-column: 2/3;
+  background-color: rgb(171, 107, 25);
+  position: sticky;
+  align-self: start;
+  width: 20vw;
+  top: 50px
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  /* background: linear-gradient(0.25turn, #838383, #ffffff, #ffffff, #ffffff, #ffffff, #838383); */
+}
+
+
+
+
+
+
+
+.viewer {
+  position: relative;
+ background-color: rgb(240, 240, 240);
+
+  padding: 10px 5px;
+  
+}
+
+
+
+
+.form p img {
+  display: inline-block;
+  max-height: 300px;
+}
+
+
+.toolsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.toolsContainer> :nth-child(n) {
+  cursor: pointer;
+}
+
+
+
+.title {
+  position: relative;
+  max-width: 100%;
+  color: #007483;
+  font-size: 40px;
+  overflow: hidden;
+  padding: 0;
+  line-height: 40px;
+  margin: 10px 0;
+}
+
+.description {
+  color: black;
+  font-size: 20px;
+  margin: 10px 2px;
+  overflow: hidden;
+  font-style: italic;
+}
+
+.form {
+  position: relative;
+  min-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+}
+
+.viewer p img {
+  max-height: 300px;
+}
+
+.form textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.formHide {
+  position: absolute;
+  font-size: 20px;
+  right: 5px;
+  top: 0;
+  z-index: 100000000;
+}
+.containerBanner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.formViewer {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  font-size: 20px;
+  right: 16vw;
+  margin-left: 30px;
+  bottom: 1vw;
+  z-index: 100000000;
+  color: black;
+  background-color: #00748365;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 3px;
+  border-radius: 20px;
+  
+
+}
+
+.hideForm {
+  position: absolute;
+  visibility: hidden;
+}
+
+
+
+.bannerIntroContainer {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  margin: 0;
+}
+
+.bannerIntroIMG {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image {
+  background-color: red;
+  width: auto;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.publicidad {
+  width: 100%;
+  object-fit: cover;
+  position: sticky;
+  top: 0px;
+}
+
+.paragraphText {
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+}
+
+.postImg {
+  width: 300px;
+
+}
+.containerIMGCenter {
+  width: 100%;
+  text-align: center;
+}
+.containerIMG {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.copyrightIMG {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  z-index: 10000000000000;
+  color: white;
+  padding: 0 1px;
+  background-color: rgba(0, 0, 0, 0.516);
+}
+
+.image {
+  width: auto;
+  max-width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+.pluss {
+  cursor: pointer;
+  position: fixed;
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  bottom: 25px;
+  right: 25px;
+  background-color: brown;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  transition: 1.2s all linear;
+  font-size: 15px;
+}
+
+
+
+
+.buttonsContainer {
+  position: relative;
+  display: flex;
+}
+
+.qlEditor img {
+  height: auto;
+  min-height: auto;
+}
+
+.qlEditor img {
+  max-width: 40vw;
+  max-height: 40vh;
+  padding: 0;
+  margin: 0;
+}
+
+.ql-editor .ql-size-large {
+  font-size: 5px;
+}
+.ql-size-normal {
+  font-size: 25px;
+}
+.ql-size-normal {
+  font-size: 25px;
+}
+.perfil {
+  position: relative;
+  width: fit-content;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(165, 42, 42, 0.471);
+  padding: 0 5px;
+  border-radius: 2px;
+
+
+}
+
+.perfil p {
+  text-align: end;
+  width: 100%;
+  margin-left: 15px;
+  padding:  5px;
+  margin: 0;
+}
+
+.perfilIMG {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+}
+.flex  > :nth-child(2) {
+  width: 20vw;
+  margin: 15px;
+  position: sticky;
+  top: 350px;
+  align-self: start;
+  background-color: #007483;
+}
+
+
+@media (max-width: 850px) {
+  /* .form p img {
+    display: inline-block;
+    max-height: 500px;
+  }
+  .viewer p img {
+    width: 100%;
+    height: 800px;
+  } */
+
+
+}
