@@ -152,7 +152,7 @@ return setUserSpecificData({
 
 
   useEffect(() => {
-    specificData && specificData[`PostImage_${router.query.temporal}`] && specificData[`PostImage_${router.query.temporal}`].nota
+   userDB && userDB[validate()] && specificData && specificData[`PostImage_${router.query.temporal}`] && specificData[`PostImage_${router.query.temporal}`].nota
       ? ''
       : getSpecificData(`/Posts/PostImage_${router.query.temporal}`, specificData, setUserSpecificData)
     userDB && userDB[validate()] && setTitle(userDB[validate()].Posts[`PostImage_${router.query.temporal.slice(2)}`].title)
