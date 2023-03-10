@@ -175,7 +175,7 @@ return setUserSpecificData({
         </div>
 
         <div className={styles.containerBanner}>
-          {userDB[validate()] && userDB[validate()]["BannerTop"] && <Banner ruta={validate()} carpeta="BannerTop" click={handlerClickEnlace}></Banner>}
+          {userDB && userDB[validate()] && userDB[validate()]["BannerTop"] && <Banner ruta={validate()} carpeta="BannerTop" click={handlerClickEnlace}></Banner>}
         </div>
 
         <div className={`${styles.viewer} ${formViewer == false && styles.hideForm}`}>
