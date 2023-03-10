@@ -171,7 +171,7 @@ return setUserSpecificData({
 
     <Layout>
 
-      <main className={styles.main}>
+    { userDB &&  <main className={styles.main}>
         <div>
           <NavbarSimple></NavbarSimple>
         </div>
@@ -261,7 +261,7 @@ return setUserSpecificData({
         {user && <span className={styles.formViewer} onClick={formViewerHandler}>▷</span>}
         <TemplateNota topic={validate()} publicView={true} banner='none'></TemplateNota>
 
-      </main>
+      </main>}
 
       <br />
       {success == "save" && <Success>Cargando...</Success>}
