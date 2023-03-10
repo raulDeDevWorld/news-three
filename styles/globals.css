@@ -7,6 +7,7 @@ body {
   scroll-behavior: smooth;
   font-size: 15px;
   background-color: white;
+  
   box-shadow: 0px 0px 10px 2px #007484 inset;
 }
 
@@ -43,5 +44,8 @@ color: black;
   html {
     color-scheme: dark;
   }
-
+  body {
+background-color: black;
+color: black;
+}
 }
