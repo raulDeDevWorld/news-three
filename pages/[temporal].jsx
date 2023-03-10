@@ -131,7 +131,9 @@ function TemplateOne() {
     writeUserData(ruteDB, objectDB, setUserSuccess, 'save')
     writeUserData(rutePost, objectPost, setUserSuccess, 'save')
 
-return getSpecificData(`/Posts/PostImage_${router.query.temporal}`, specificData, setUserSpecificData)
+return setUserSpecificData({
+    ...specificData, [`PostImage_${router.query.temporal}`]: objectPost,
+})
 
   }
 
