@@ -161,7 +161,7 @@ return setUserSpecificData({
 
     specificData && specificData[`PostImage_${router.query.temporal}`] && specificData[`PostImage_${router.query.temporal}`].nota && setTextEditor(specificData[`PostImage_${router.query.temporal}`].nota)
 
-  }, [specificData]);
+  }, [specificData, router.query.temporal]);
 
 
   // userDB && console.log(userDB[validate()].Posts[`PostImage_${router.query.temporal.slice(2)}`].nota)
