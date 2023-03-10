@@ -33,13 +33,15 @@ a {
   font-size: 10px;
 }
 
+input {
+background-color: white;
+color: black;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 
-  body {
-    color: black;
-    background: black;
-  }
 }
