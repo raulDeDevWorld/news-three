@@ -15,7 +15,7 @@ export function WithoutAuth(Component) {
 
         return (
             <>
-                {user === undefined || userDB == '' && <Loader />}
+                {userDB == '' && <Loader />}
                 {userDB !== "" && postsIMG !== {} && <Component {...arguments} />}
             </>
         )
