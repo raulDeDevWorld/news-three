@@ -171,7 +171,7 @@ return setUserSpecificData({
 
     <Layout>
 
-    { userDB &&  <main className={styles.main}>
+    { userDB && specificData &&  <main className={styles.main}>
         <div>
           <NavbarSimple></NavbarSimple>
         </div>
